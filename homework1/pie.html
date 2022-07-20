@@ -130,23 +130,24 @@
         </a>
 
         
-        <a class="right" href="http://validator.w3.org/check?uri=referer" onclick="checkHtml()">
-            <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
-                alt="css validator" />
-        </a>
+        <a href="#" onclick="checkValidator()">
+            <img
+              src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+              alt="html validator"
+          /></a>
         <br/>
      
                 <pre class="right">Copyright &copy; 2012 Granny's Pies      |
     A Granny's Pies Production          |
     All rights reserved                 |</pre>
-                <script>
-        function checkHtml() {
-        
-            window.location.href = `https://validator.w3.org/check?uri=${document.URL}`;
+       
 
 
+    <script>
+        function checkValidator() {
+          window.location.href = `https://validator.w3.org/check?uri=${document.URL}`;
         }
-        </script>
+      </script>
             </body>
 
 
