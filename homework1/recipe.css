@@ -1,63 +1,86 @@
-
-body {
-    background-color: #fff;
-    color: #404040;
+body{
+    background: url("images/silverware.jpg"); 
+    background-attachment: fixed;
+    font-family: Georgia, Garamond, serif;
+    margin: 2rem;
 }
 
-
-.title_heading {
-    background-color: #F0F0F0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: sans-serif;
-    text-decoration: underline;
+.title{
     color: #A4A400;
-    font-size: 22pt;
-    margin: 3px;
-}
-
-.sub_title {
-    background-color: #F0F0F0;
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    text-decoration: underline;
-    color: #A4A400;
-    font-size: 22pt;
-    margin: 3px;
-}
-
-.listItem {
-    list-style-type:none;
-}
-
-
- .tooltipMain {
- position: relative;
- display: inline-block;
- border-bottom: 2px dotted black;   
-
- 
-} 
-
-.tooltipMain:before {
-    content: attr(data-hover);
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    opacity: 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 999;
+    text-decoration: underline;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.25em;
+    padding: 1rem;
+}
+
+.textshado {
+    background-color: #F0F0F0;
+}
+
+.menucontent {
+    margin: 10px;
+}
+pre{
+    font-family: monospace;
+}
+span{
+    background-color: #F0F0F0;
+
+}
+
+.linkColor{
+    color: #A4A400;
 }
 
 
-.tooltipMain:hover::before {
-    visibility: visible;
-    opacity: 1;
-  }
+.submenu{
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    color: #A4A400;
+    text-decoration: underline;
+    font-size: 18pt;
+    letter-spacing: 0.25em;
+    padding: 1rem;
+}
+p {
+    font-size : 20px;
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+}
+
+
+ul.background_image{
+    list-style-image: url('images/pie_icon.gif');
+
+}
+
+#line{
+    text-decoration: line-through;
+}
+
+.comment{
+   padding-block: 10px;
+   margin-right: 35px;
+   margin-left: 35px;
+   background: #FFFFA8 ;
+   font-style: oblique;
+}
+
+#underlineColor{
+    text-decoration: underline;
+    font-style: normal;
+    color: #A4A400;
+}
+
+.right{
+    float: right;
+}
+
+
+.footer {
+    margin-top: 3rem;
+    
+}
