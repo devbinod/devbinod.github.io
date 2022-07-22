@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <link href="./signupform.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <img src="images/nerdluv.png" alt="logo" />
+    <p>where meek geeks meet</p>
+    <fieldset class="background">
+      <legend class="legend">New User Signup:</legend>
+
+      <form action="http://mumstudents.org/params.php">
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Name</label>
+          </div>
+
+          <div class="inner_right_div">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              maxlength="16"
+              size="16"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Gender: </label>
+          </div>
+
+          <div class="inner_right_div">
+            <input type="radio" name="gender" value="male" checked />
+            Male
+            <input type="radio" name="gender" value="female" /> Female
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label> Age: </label>
+          </div>
+
+          <div class="inner_right_div">
+            <input
+              type="text"
+              id="age"
+              name="age"
+              size="6"
+              maxlength="2"
+              placeholder=""
+            />
+          </div>
+        </div>
+
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Personality Type:</label>
+          </div>
+
+          <div class="inner_right_div">
+            <input
+              class="rightmargin"
+              type="text"
+              id="Personality"
+              name="Personality"
+              size="6"
+              maxlength="4"
+            />
+            <label class="color">
+              (<a href="http://www.humanmetrics.com/cgi-win/jtypes2.asp"
+                ><span class="color">Don't know your Type?</span></a
+              >)
+            </label>
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label> Favourite OS: </label>
+          </div>
+
+          <div class="inner_right_div">
+            <select class="rightmargin">
+              <option value="windows">Windows</option>
+              <option value="linux">Linux</option>
+              <option value="mac">Mac</option>
+            </select>
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label> Seeking Age :</label>
+          </div>
+
+          <div class="inner_right_div">
+            <input
+              class="rightmargin"
+              type="text"
+              id="min"
+              name="min"
+              placeholder="min"
+              maxlength="2"
+              size="6"
+            />
+            to
+            <input
+              type="text"
+              id="max"
+              name="max"
+              placeholder="max"
+              maxlength="2"
+              size="6"
+            />
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <input class="button" type="submit" value="Sign Up" />
+          </div>
+        </div>
+        <br class="clear_div" />
+      </form>
+        
+        <div class="validator">
+          <a href="#" onclick="checkValidator()">
+            <img
+              src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+              alt="html validator"
+          /></a>
+          <br />
+        
+        </div>
+        <div class="validator">
+            <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://devbinod.github.io/homework1/pie.html"
+          >
+            <img
+              src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+              alt="css validator"
+            />
+          </a>
+          </div>
+        
+    </fieldset>
+    
+    </div>
+    <script>
+        function checkValidator() {
+          window.location.href = `https://validator.w3.org/check?uri=${document.URL}`;
+        }
+      </script>
+  </body>
+</html>
