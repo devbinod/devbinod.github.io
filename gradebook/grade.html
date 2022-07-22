@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <link href="./grade.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <fieldset class="background">
+      <legend class="legend">Student Grade System</legend>
+
+      <form action="http://mumstudents.org/params.php">
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Student Name</label>
+          </div>
+
+          <div class="inner_right_div">
+            <input type="text" id="studentName" name="studentName" />
+          </div>
+        </div>
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Student ID</label>
+          </div>
+
+          <div class="inner_right_div">
+            <input type="text" id="studentid" name="studentid" />
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <label>Assignment: </label>
+          </div>
+
+          <div class="inner_right_div">
+            <select id="assignment" name="assignment">
+              <option value="HW1">Lab 1</option>
+              <option value="HW2">Lab 2</option>
+              <option value="HW3">Lab 3</option>
+            </select>
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div"><label>Entry:</label></div>
+
+          <div class="inner_right_div">
+            <input type="radio" name="entry" value="august2022" checked /> Aug
+            2022 <input type="radio" name="entry" value="feb2022" /> Feb 2022
+            <input type="radio" name="entry" value="feb2021" /> Aug 2021
+          </div>
+        </div>
+
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div"></div>
+
+          <div class="inner_right_div">
+            <label>
+              <input type="checkbox" id="verify" name="verify" />Please
+              Verify,You are seeing your own grade</label
+            >
+            <label for="verify"> </label>
+          </div>
+        </div>
+        <br class="clear_div" />
+
+        <div class="outer_div">
+          <div class="inner_left_div">
+            <input class="button" type="submit" value="Show Grade" />
+          </div>
+        </div>
+        <br class="clear_div" />
+      </form>
+
+      <div class="validator">
+        <a href="#" onclick="checkValidator()">
+          <img
+            src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+            alt="html validator"
+        /></a>
+        <br />
+      </div>
+      <div class="validator">
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://devbinod.github.io/homework1/pie.html"
+        >
+          <img
+            src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+            alt="css validator"
+          />
+        </a>
+      </div>
+    </fieldset>
+
+    <script>
+      function checkValidator() {
+        window.location.href = `https://validator.w3.org/check?uri=${document.URL}`;
+      }
+    </script>
+  </body>
+</html>
