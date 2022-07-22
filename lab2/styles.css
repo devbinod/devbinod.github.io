@@ -2,7 +2,7 @@ body{
     background-color: #ffd;
 }
 
-#section_header_text{
+.section_header_text{
     color: #0dbcde;
     font-size: 35px;
     font-family: monospace;
@@ -14,7 +14,7 @@ body{
 }
 
 
-#movie_color{
+.movie_color{
     color: red;
 }
 
