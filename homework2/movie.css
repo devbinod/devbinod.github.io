@@ -13,6 +13,7 @@ body {
 .bannerImage {
     background-image: url("images/bannerbg.png");
     background-repeat: repeat-x;
+    text-align: center;
 }
 
 .title_header {
