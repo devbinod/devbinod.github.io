@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="To do list using javascript" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="divWrapper">
+        <h1>Task List</h1>
+        <label>Task</label><br />
+        <input id="task" /><br />
+        <button id="addTask" onclick="addTask();">Add Task</button><br />
+        <button id="deleteTask" onclick="deleteTask();">Clear Tasks</button>
+      </div>
+      <div class="divWrapper">
+        <br />
+        <br />
+        <br />
+        <label id="taskList"> Task List</label><br />
+        <ul id="todos"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
