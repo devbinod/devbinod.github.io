@@ -1,0 +1,46 @@
+// 1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+In this example, we will call a booyah() a function after two second of interval
+
+
+setTimeout(booyah(), 2000);
+In this example, we will call a booyah() a function is being called immidiately
+because Set timeout takes function as an argunment. In this example we are not passing a function booyah.
+When we pass booyah(), it means we are just calling a function booyah(). when we call the booyah(), the result is undefined when is then eval.
+
+
+What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3)); 
+
+Ans: Both two function gives 6
+
+
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+
+
+function booyah1() {
+    alert('“BOOYAH')
+}
+
+
+function booyah2() {
+
+    return function () {
+        alert("“BOOYAH")
+    }
+}
+
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Decorator</title>
+    <link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+    <script src="./decoratemytext.js"></script>
+
+    <!-- link to your script file here -->
+  </head>
+
+  <body>
+    <h1>Text Decorator</h1>
+
+    <div>
+      <img src="decorated.gif" alt="very decorated!" />
+    </div>
+
+    <!-- Your UI controls go here -->
+
+    <div>
+      <div>
+        <fieldset>
+          <legend>Text</legend>
+          <textarea name="mytextArea" cols="25" rows="10" id="mytextArea">
+Sample Item 1 
+Sample Item 2
+        </textarea
+          >
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Decoration</legend>
+          <input
+            type="button"
+            name="Bigger Decorations!"
+            value="Bigger Decorations!"
+            onclick="showAlertMessage()"
+          /><br />
+          <input
+            type="checkbox"
+            name="bling"
+            id="blings"
+            value="Bling"
+            onchange="changeBehaviour()"
+          />Bling
+        </fieldset>
+      </div>
+      <div>
+        <input
+          type="button"
+          name="changeToPigLatin"
+          onclick="changeToPigLatin()"
+          value="Igpay Atinlay"
+        />
+        <div id="updatedData"></div>
+      </div>
+      <br />
+
+      <div>
+        <input
+          type="button"
+          name="malkovitch"
+          onclick="checkMalkovitch()"
+          value="Malkovitch"
+        />
+        <div id="malkovitchData"></div>
+      </div>
+    </div>
+  </body>
+</html>
