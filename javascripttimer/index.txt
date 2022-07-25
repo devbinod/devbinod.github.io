@@ -51,3 +51,5 @@ Main reasons for using it are as follows:
 
 1) Separation of functionality (the "behavior layer") from a Web page's structure/content and presentation.
 2) Best practices to avoid the problems of traditional JavaScript programming.
+3) Some browsers may ignore your script completely because they don’t support JavaScript or their support is too old-fashioned.
+4) Even when a browser can support JavaScript, users may turn it off for security reasons, or their corporate firewall may block it by removing all <script> tags.
