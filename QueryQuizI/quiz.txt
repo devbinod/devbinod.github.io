@@ -1,0 +1,58 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+
+Ans: 
+
+
+
+jQuery is a java script library. The dollar sign with the parentheses is the shorter name of the jQuery function.This is the function that creates jQuery objects and
+
+registers handlers to be invoked when the DOM is ready; it also serves as the jQuery namespace.
+
+I usually refer to it as $()
+
+
+
+Jquery object is an object that represent a set of document elements. It can also be called a Jquery result or Jquery set.
+
+ Jquery object is returned by Jquery function.  A Jquery object contain length, context and selector properties.
+
+
+
+ 
+
+2. Write jQuery code to find all h1 elements that are children of a div element and make their background
+
+color red.
+
+
+
+Sample HTML:
+
+<body>
+
+<h1>abc</h1><br><div>
+
+ <h1>div-1</h1>
+
+ <h1>div-2</h1>
+
+ </div>
+
+ <h1>xyz</h1>
+
+</body>
+
+
+
+Ans:   $("div").children("h1").css({ color: "red" });
+
+
+
+
+
+3. Use a jQuery method to insert the text "YES!" at the end of the <p> element.
+
+Ans: $("p").append("YES");
+
+
+
