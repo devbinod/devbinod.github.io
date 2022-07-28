@@ -1,0 +1,61 @@
+1. Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+they are. Explain why they can have different parameters and be equivalent, if they are equivalent. 
+
+//code fragment 1
+$("li").each(function(idx, e) {
+$(e).css(“color”, “yellow”);
+});
+//code fragment 2
+$("li").each(function() {
+$(this).css(“color”, “yellow”);
+});
+//code fragment 3
+$("li").each(function(idx) {
+$(this).css(“color”, “yellow”);
+});
+
+
+Ans : All are equivalent because in, all the fragment JQuery function changes the every list
+element color to yellow.
+
+
+
+2. Write a jQuery expression to find all divs on a page that include an unordered list in
+them, and make their text color be blue.
+
+
+<div>no ul here </div>
+<div>
+This does contain a ul.
+<ul>
+<li>the first item</li>
+<li>the second item</li>
+</ul>
+</div>
+<script>
+<!-- INSERT YOUR JQUERY CODE HERE - - >
+$(document).ready(function(){
+$("div ul li").css("color","blue");
+});
+</script>
+</body>
+
+
+3. Write jQuery code to append the following div element (and all of its contents)
+dynamically to the body element.
+
+<div><h1>JQuery Core</h1></div>
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS Bin</title>
+</head>
+<body>
+</body>
+</html>
+Ans :
+$(document).ready(function(){
+$("body").append("<div><h1>JQuery Core</h1></div>");
+});
