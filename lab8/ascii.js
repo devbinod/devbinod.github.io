@@ -1,3 +1,6 @@
+"use strict";
+
+
 let counter = 0;
 let timerInterval;
 let delayMs = 250;
@@ -5,6 +8,8 @@ let frames;
 let frameArr;
 
 $(document).ready(function () {
+
+    
   $("#btn_stop_animation").prop("disabled", true);
 
   $("#btn_start_animation").click(function () {
