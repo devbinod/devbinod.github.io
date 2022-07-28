@@ -15,8 +15,11 @@ $(this).css(“color”, “yellow”);
 });
 
 
-Ans : All are equivalent because in, all the fragment JQuery function changes the every list
-element color to yellow.
+Ans : All of them are equivalent because in, all the fragment JQuery function changes the every list
+element color to yellow color.
+
+
+
 
 
 
@@ -41,8 +44,12 @@ $("div ul li").css("color","blue");
 </body>
 
 
+
+
 3. Write jQuery code to append the following div element (and all of its contents)
 dynamically to the body element.
+
+
 
 <div><h1>JQuery Core</h1></div>
 HTML:
@@ -55,6 +62,9 @@ HTML:
 <body>
 </body>
 </html>
+
+
+
 Ans :
 $(document).ready(function(){
 $("body").append("<div><h1>JQuery Core</h1></div>");
