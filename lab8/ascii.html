@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASCIImation</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ascii.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="animations.js"></script>
+    <script src="ascii.js"></script>
+  </head>
+
+  <body>
+    <header>CS472: ASCII Animation Viewer</header>
+    <textarea id="textArea" name="textarea" rows="20" cols="80"></textarea>
+
+    <div class="outerDiv">
+      <div>
+        <fieldset id="control_fieldset" class="fieldset">
+          <legend>Play Controls</legend>
+          <input
+            type="button"
+            name="Start"
+            id="btn_start_animation"
+            value="Start"
+          />
+          <input
+            type="button"
+            name="Stop"
+            id="btn_stop_animation"
+            value="Stop"
+          />
+        </fieldset>
+      </div>
+      <fieldset id="animation_fieldset" class="fieldset">
+        <legend>Animation</legend>
+        <select id="animationType" name="animation">
+          <option value="exercise">Exercise</option>
+          <option value="juggler">Juggler</option>
+          <option value="bike">Bike</option>
+          <option value="dive">Dive</option>
+          <option value="custom">Custom</option>
+        </select>
+      </fieldset>
+      <fieldset id="fontSize" class="fieldset">
+        <legend>Size</legend>
+        <select id="size" name="size" class="fieldset">
+          <option value="7pt">Tiny</option>
+          <option value="10pt">Small</option>
+          <option value="12pt" selected>Medium</option>
+          <option value="16pt">Large</option>
+          <option value="24pt">Extra Large</option>
+          <option value="32pt">XXL</option>
+        </select>
+      </fieldset>
+      <fieldset id="turbospeed">
+        <legend>Speed</legend>
+        <label id="box_label"
+          ><input type="checkbox" id="turboSpeed" />Turbo</label
+        >
+      </fieldset>
+    </div>
+    <footer class="validator">
+      <br />
+      <br />
+      <br />
+      <br />
+      <a href="https://validator.w3.org/"
+        ><img
+          src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+          alt="html validator"
+      /></a>
+      <br />
+      <a href="https://jigsaw.w3.org/css-validator/"
+        ><img
+          src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+          alt="css validator"
+      /></a>
+      <br />
+      <a href="https://mumstudents.org/jshint/referer.php">
+        <img
+          src="http://mumstudents.org/jshint/jshint-small.png"
+          alt="Valid JS"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+
+
+body{
+    background-color: #CCCCFF;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+header{
+    margin: 0;
+    font-size: 32pt;  
+}
+
+textarea{
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+.fieldset{
+    border: black 3px solid;
+} 
+footer.validator{
+    float:right;
+    
+}
+
+.outerDiv {
+    display: flex;
+    justify-content: center;
+
+}
