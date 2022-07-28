@@ -31,6 +31,11 @@ $(document).ready(function () {
   $('#turboSpeed').change(function() {
         startAnimation();
   })
+
+  $('#btn_stop_animation').click(function() {
+    stopAnimation()
+  })
+
 });
 
 function startAnimation() {
@@ -68,4 +73,14 @@ function animateDiagram() {
     $("#textArea").val(frameArr[counter]);
     counter++;
   }
+}
+
+
+function stopAnimation() {
+  window.clearInterval(timerInterval);
+
+  $('#textArea').val(frames)
+  $("#btn_stop_animation").prop("disabled", true);
+  $("#btn_start_animation").prop("disabled", false);
+
 }
