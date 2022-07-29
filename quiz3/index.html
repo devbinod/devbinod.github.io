@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("span").parent().css({ color: "green" });
+        $("span").parent().parent().css({ color: "green" });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="ancestors">
+      <div>
+        (great-grandparent)
+        <ul>
+          (grandparent)
+          <li>
+            (direct parent)
+            <span>some text</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

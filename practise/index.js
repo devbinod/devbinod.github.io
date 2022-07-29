@@ -70,17 +70,69 @@
 //     console.log(x)
 
 
-function a() {
-    return {
-    a: 1
-    }
-    }
-    function b()
-    { //OTBS – ok, but not good practice according to some (Crockford, …)
-    return //semicolon gets inserted here
-    {
-    a: 1 ;
-    }
-    }
-    console.log(a()); //object
-    console.log(b()); //undefined
+// function a() {
+//     return {
+//     a: 1
+//     }
+//     }
+//     function b()
+//     { //OTBS – ok, but not good practice according to some (Crockford, …)
+//     return //semicolon gets inserted here
+//     {
+//     a: 1 ;
+//     }
+//     }
+//     console.log(a()); //object
+//     console.log(b()); //undefined
+
+
+// function findMax() {
+//     console.log(arguments)
+//     let i;
+//     var max = -Infinity;
+//     for (i = 0; i < arguments.length; i++){
+//     if (arguments[i] > max) {
+//     max = arguments[i];
+//     }
+//     }
+//     return max;
+//     } 
+
+// let x = findMax(1, 123, 500, 115, 44, 88); // 500
+// var y = findMax(5, 32, 24)
+
+
+// console.log(x)
+// console.log(y)
+
+
+
+// function log(x=10, y=5){
+//     console.log( x + ", " + y);
+//     console.log(arguments)
+//     }
+//     log(); // 10, 5
+//     log(5); // 5, 5
+//     log(5, 10); // 5, 10
+
+
+
+// function sum(x,y, ...more){
+//     console.log(more)
+//     console.log(x)
+//     console.log(y)
+//     console.log(arguments)
+//     var total = x + y;
+//     if(more.length > 0){
+//     for (let i=0; i<more.length; i++) {
+//     total += more[i];
+//     }
+//     }
+//     console.log(total);
+//     }
+
+//     sum(4,4); // 8
+// sum(4,4,4); // 12
+
+// https://www.w3schools.com/jquery/jquery_dom_get.asp
+// https://www.w3schools.com/css/css_border.asp
