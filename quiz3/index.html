@@ -3,15 +3,21 @@
   <head>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
+    <style>
+      #black h1 {
+        color: red;
+      }
+    </style>
+    <!-- 
     <script>
       $(document).ready(function () {
         $("span").parent().css({ color: "green" });
         $("span").parent().parent().css({ color: "green" });
       });
-    </script>
+    </script> -->
   </head>
   <body>
-    <div class="ancestors">
+    <!-- <div class="ancestors">
       <div>
         (great-grandparent)
         <ul>
@@ -22,6 +28,14 @@
           </li>
         </ul>
       </div>
+    </div> -->
+
+    <h1>
+      <div id="black">sdfsdf</div>
+    </h1>
+
+    <div id="black">
+      <h1>hello</h1>
     </div>
   </body>
 </html>
