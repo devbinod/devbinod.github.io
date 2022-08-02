@@ -1,0 +1,22 @@
+.outerDiv {
+    border: solid;
+    border-radius: 62px;
+    width: 50%;
+    margin: auto;
+    background-color: #ffa;
+}
+
+.innerDiv {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+strong {
+    margin-right:30px
+}
+
+body{
+    background-color: #f0f0e9;
+}
