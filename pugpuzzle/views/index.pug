@@ -1,0 +1,24 @@
+html
+  head
+    link(rel="stylesheet", href="./style.css")
+  title Quiz
+body
+
+div 
+  h1 The Number Quiz
+
+  h5 Your current Score is 
+    = score
+
+  h4 Gess the next number in the sequence
+
+
+  p= title
+
+
+  form(action="/add", method='Post')
+    P Your Answer: 
+      input(type="text", name="answer" required)
+
+    P 
+     input(type="submit", value="Submit")
