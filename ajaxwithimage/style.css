@@ -1,0 +1,22 @@
+#explanation {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 40px;
+    background-color: #f7f1f1;
+}
+
+
+#photoTitle {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#imageContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
