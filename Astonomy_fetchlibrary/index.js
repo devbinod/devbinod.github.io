@@ -27,22 +27,15 @@ $(document).ready(function () {
 function displayImages() {
     let date = $("#date").val();
 
-    $.ajax({
-        url: `https://api.nasa.gov/planetary/apod?date=${date}&api_key=0AJH3YGVbm8W6Ay9sNegG4sedHNzr6zBkoOh53WA`,
-        date: $("#date").val(),
-        dataType: "json",
-        "success": function displayContent(data) {
-            console.log("===ddd", data)
+    fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=0AJH3YGVbm8W6Ay9sNegG4sedHNzr6zBkoOh53WA`)
+        .then(data => data.json())
+        .then(data => {
             $("#displayImage").attr("src", data.url);
             $("#photoTitle").text(data.title);
             $("#explanation").html(data.explanation)
+        }).catch(err => alert(err))
 
-        },
-        "error": () => {
-            alert(`oops something went wrong`)
-        }
 
-    })
 
 
 }
