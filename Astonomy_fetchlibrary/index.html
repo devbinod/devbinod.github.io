@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA APOD API</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <i> Astronomy Picture of the Day </i>
+    <div>
+      <label for="date">Enter date:</label>
+      <input type="date" name="date" id="date" />
+      <input type="button" id="viewImages" value="View" />
+      <h2 id="photoTitle"></h2>
+    </div>
+
+    <div id="explanation"></div>
+    <div id="imageContainer">
+      <img src="" id="displayImage" />
+    </div>
+  </body>
+</html>
