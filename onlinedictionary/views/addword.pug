@@ -1,0 +1,11 @@
+html
+  head
+    title Online Dictionary
+  body
+    h1  Add new Word
+     div 
+       form(action="http://localhost:3000/search", method="POST") 
+            label(for="search")  Add word
+            input(type="text", id="search" name="search")  
+            input(type="submit", value="Search")
+    
