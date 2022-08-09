@@ -1,0 +1,30 @@
+.heading {
+    font-size: 45px;
+    background-color: #e3e0d6;
+    font-weight: bold;
+}
+
+.search {
+    padding: 16px;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #f2eff1;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.outercontainer {
+    display: block;
+    background-color: #edede4;
+    padding: 20px;
+    margin: 10px;
+}
+
+.searchData {
+    background-color: #ffa;
+    margin: auto;
+    padding: 36px;
+    justify-content: center;
+    display: flex;
+}
